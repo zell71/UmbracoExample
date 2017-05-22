@@ -1,0 +1,36 @@
+﻿@using UmbracoExample.Site.Models
+@using Zoombraco.Helpers
+@model PageBase
+@{
+    var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+    var cs = new ContentHelper(umbracoHelper);
+    var home = cs.GetRootNode<Home>();
+    var childItems = cs.GetChildren<Zoombraco.Models.Page>(home.Id);
+    var activeClass = home.Id == Model.Id ? "active" : string.Empty;
+}
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="@activeClass"><a href="@home.Url">@home.Name</a></li>
+                @{
+                    foreach (var childItem in childItems)
+                    {
+                        activeClass = childItem.Id == Model.Id ? "active" : string.Empty;
+                        <li class="@activeClass"><a href="@childItem.Url">@childItem.Name</a></li>
+                    }
+                }               
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
