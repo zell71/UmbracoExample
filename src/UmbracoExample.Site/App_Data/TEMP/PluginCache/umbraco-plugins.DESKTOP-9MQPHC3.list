@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <plugins>
   <baseType type="umbraco.interfaces.IApplicationStartupHandler" resolutionType="FindAllTypes">
+    <add type="Umbraco.Core.Models.Identity.IdentityModelMappings, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Strategies.RelateOnCopyHandler, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Strategies.RelateOnTrashHandler, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.EmbeddedResourceStartup, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.RelationMapping.RelationMappingEvent, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0.6079.16194, Culture=neutral, PublicKeyToken=null" />
+    <add type="UmbracoExample.Site.Events.ApplicationEvents, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Zoombraco.ZoombracoApplicationEvents, Zoombraco, Version=0.5.0.23, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.ModelsBuilder.Umbraco.ModelsBuilderApplication, Umbraco.ModelsBuilder, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Core.Cache.CacheEventHandler, Umbraco.Forms.Core, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6079.16198, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Installer.AutoInstaller, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.StartUpHandlers, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6079.16192, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6079.16192, Culture=neutral, PublicKeyToken=null" />
+    <add type="Our.Umbraco.Vorto.Web.Events.VortoCacheExpire, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Our.Umbraco.Vorto.Web.Events.VortoServerVariablesParser, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.BatchedDatabaseServerMessengerStartup, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Routing.RedirectTrackingEventHandler, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Models.Mapping.RelationModelMapper, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
@@ -40,29 +57,10 @@
     <add type="umbraco.presentation.nodeFactory.UmbracoSiteMapProviderAccessUpdate, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.presentation.EnsureSystemPathsApplicationStartupHandler, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.presentation.umbraco.Search.ExamineEvents, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Models.Identity.IdentityModelMappings, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Strategies.RelateOnCopyHandler, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Strategies.RelateOnTrashHandler, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.ModelsBuilder.Umbraco.ModelsBuilderApplication, Umbraco.ModelsBuilder, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.EmbeddedResourceStartup, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.RelationMapping.RelationMappingEvent, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0.6079.16194, Culture=neutral, PublicKeyToken=null" />
-    <add type="UmbracoExample.Site.Events.ApplicationEvents, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="Zoombraco.ZoombracoApplicationEvents, Zoombraco, Version=0.5.0.23, Culture=neutral, PublicKeyToken=null" />
-    <add type="umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6079.16198, Culture=neutral, PublicKeyToken=null" />
-    <add type="Our.Umbraco.Vorto.Web.Events.VortoCacheExpire, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="Our.Umbraco.Vorto.Web.Events.VortoServerVariablesParser, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6079.16192, Culture=neutral, PublicKeyToken=null" />
-    <add type="umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6079.16192, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter" resolutionType="FindAllTypes" />
   <baseType type="Umbraco.Core.PropertyEditors.IPropertyValueConverter" resolutionType="FindAllTypes">
-    <add type="Umbraco.Web.PropertyEditors.ValueConverters.ImageCropperValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Web.PropertyEditors.ValueConverters.MacroContainerValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Web.PropertyEditors.ValueConverters.RelatedLinksEditorValueConvertor, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Web.PropertyEditors.ValueConverters.MarkdownEditorValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Web.PropertyEditors.ValueConverters.TextStringValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Web.PropertyEditors.ValueConverters.RteMacroRenderingValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PickerPropertyValueConverter, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.PropertyEditors.PropertyValueConverterBase, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.PropertyEditors.ValueConverters.JsonValueConverter, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.PropertyEditors.ValueConverters.GridValueConverter, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
@@ -78,19 +76,52 @@
     <add type="Umbraco.Core.PropertyEditors.ValueConverters.TinyMceValueConverter, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.PropertyEditors.ValueConverters.DatePickerValueConverter, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.PropertyEditors.ValueConverters.YesNoValueConverter, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Our.Umbraco.Vorto.Converters.VortoValueConverter, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PickerPropertyValueConverter, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
     <add type="Zoombraco.ComponentModel.PropertyValueConverters.RelatedLinksPropertyConverter, Zoombraco, Version=0.5.0.23, Culture=neutral, PublicKeyToken=null" />
+    <add type="Our.Umbraco.Vorto.Converters.VortoValueConverter, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PropertyEditors.ValueConverters.ImageCropperValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PropertyEditors.ValueConverters.MacroContainerValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PropertyEditors.ValueConverters.RelatedLinksEditorValueConvertor, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PropertyEditors.ValueConverters.MarkdownEditorValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PropertyEditors.ValueConverters.TextStringValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.PropertyEditors.ValueConverters.RteMacroRenderingValueConverter, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Web.Mvc.SurfaceController" resolutionType="FindAllTypes">
+    <add type="UmbracoExample.Site.Controller.Render.FormPageController, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="UmbracoExample.Site.Controller.Render.GenericPageController, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="UmbracoExample.Site.Controller.Render.HomeController, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Controllers.UmbracoFormsController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Controllers.UmbProfileController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Controllers.UmbLoginStatusController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Controllers.UmbRegisterController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Controllers.UmbLoginController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="UmbracoExample.Site.Controller.Render.GenericPageController, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="UmbracoExample.Site.Controller.Render.HomeController, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Web.WebApi.UmbracoApiController" resolutionType="FindAllTypes">
+    <add type="nuPickers.Shared.DotNetDataSource.DotNetDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.JsonDataSource.JsonDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.LuceneDataSource.LuceneDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.RelationDataSource.RelationDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.EnumDataSource.EnumDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.CustomLabelApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.RelationMapping.RelationMappingApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.SqlDataSource.SqlDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.Shared.XmlDataSource.XmlDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.ExportController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.FormSecurityController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.LicensingController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.UpdatesController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.DataSourceController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.DataSourceWizardController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.FormController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.PickerController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.PreValueSourceController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.RecordController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Editors.WorkflowController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Trees.DataSourceTreeController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Trees.FormTreeController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Trees.PreValueSourceTreeController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Forms.Web.Trees.FormSecurityTreeController, Umbraco.Forms.Web, Version=4.4.2.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Our.Umbraco.Vorto.Web.Controllers.VortoApiController, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.ModelsBuilder.Umbraco.ModelsBuilderBackOfficeController, Umbraco.ModelsBuilder, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Editors.GravatarController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.HealthCheck.HealthCheckController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Editors.RedirectUrlManagementController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
@@ -136,17 +167,6 @@
     <add type="Umbraco.Web.WebServices.ExamineManagementApiController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.WebServices.TagsController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.WebServices.XmlDataIntegrityController, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.ModelsBuilder.Umbraco.ModelsBuilderBackOfficeController, Umbraco.ModelsBuilder, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="Our.Umbraco.Vorto.Web.Controllers.VortoApiController, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.DotNetDataSource.DotNetDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.JsonDataSource.JsonDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.LuceneDataSource.LuceneDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.RelationDataSource.RelationDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.EnumDataSource.EnumDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.CustomLabelApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.RelationMapping.RelationMappingApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.SqlDataSource.SqlDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.Shared.XmlDataSource.XmlDataSourceApiController, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Core.Media.IThumbnailProvider" resolutionType="FindAllTypes">
     <add type="Umbraco.Web.Media.ThumbnailProviders.MediaTypeIconThumbnailProvider, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
@@ -157,6 +177,7 @@
     <add type="Umbraco.Web.Media.ImageUrlProviders.ImageUrlProvider, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Zoombraco.Models.Page" resolutionType="FindAllTypes">
+    <add type="UmbracoExample.Site.Models.FormPage, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="UmbracoExample.Site.Models.GenericPage, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="UmbracoExample.Site.Models.Home, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="UmbracoExample.Site.Models.PageBase, UmbracoExample.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
@@ -165,7 +186,78 @@
   <baseType type="Zoombraco.Models.Component" resolutionType="FindAllTypes">
     <add type="Zoombraco.Models.Component, Zoombraco, Version=0.5.0.23, Culture=neutral, PublicKeyToken=null" />
   </baseType>
+  <baseType type="Umbraco.Core.Persistence.Mappers.BaseMapper" resolutionType="FindTypesWithAttribute">
+    <add type="Umbraco.Core.Persistence.Mappers.AccessMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.DomainMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.MigrationEntryMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.TaskTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.MemberGroupMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.TagMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.TemplateMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.MacroMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.MemberMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.MemberTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.ContentMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.ContentTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.DataTypeDefinitionMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.DictionaryMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.DictionaryTranslationMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.LanguageMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.MediaMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.MediaTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.PropertyGroupMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.PropertyMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.PropertyTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.RelationMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.RelationTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.ServerRegistrationMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.UmbracoEntityMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.ExternalLoginMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.UserMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.Persistence.Mappers.UserTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+  </baseType>
   <baseType type="Umbraco.Core.PropertyEditors.IParameterEditor" resolutionType="FindAllTypes">
+    <add type="nuPickers.PropertyEditors.DotNetCheckBoxPicker.DotNetCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.DotNetDropDownPicker.DotNetDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.DotNetLabels.DotNetLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.DotNetPrefetchListPicker.DotNetPrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.DotNetRadioButtonPicker.DotnetRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.DotNetTypeaheadListPicker.DotNetTypeaheadPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.EnumLabels.EnumLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.JsonLabels.JsonLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.JsonTypeaheadListPicker.JsonTypeaheadPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.JsonRadioButtonPicker.JsonRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.JsonPrefetchListPicker.JsonPrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.JsonDropDownPicker.JsonDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.JsonCheckBoxPicker.JsonCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.EnumCheckBoxPicker.EnumCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.EnumDropDownPicker.EnumDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.EnumPrefetchListPicker.EnumPrefetchListPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.EnumRadioButtonPicker.EnumRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.LuceneCheckBoxPicker.LuceneCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.LuceneDropDownPicker.LuceneDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.LuceneLabels.LuceneLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.LucenePrefetchListPicker.LucenePrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.LuceneRadioButtonPicker.LuceneRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.LuceneTypeaheadListPicker.LuceneTypeaheadPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.SqlLabels.SqlLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.SqlTypeaheadListPicker.SqlTypeaheadListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.XmlLabels.XmlLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.XmlTypeaheadListPicker.XmlTypeaheadPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.RelationLabels.RelationLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.SqlCheckBoxPicker.SqlCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.SqlDropDownPicker.SqlDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.SqlPrefetchListPicker.SqlPrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.SqlRadioButtonPicker.SqlRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.XmlCheckBoxPicker.XmlCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.XmlDropDownPicker.XmlDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.XmlPrefetchListPicker.XmlPrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="nuPickers.PropertyEditors.XmlRadioButtonPicker.XmlRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.PropertyEditors.ParameterEditor, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Core.PropertyEditors.PropertyEditor, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+    <add type="Zoombraco.Resources.PropertyEditors.CharDisplayPropertyEditor, Zoombraco, Version=0.5.0.23, Culture=neutral, PublicKeyToken=null" />
+    <add type="Zoombraco.Resources.PropertyEditors.CharLimitPropertyEditor, Zoombraco, Version=0.5.0.23, Culture=neutral, PublicKeyToken=null" />
+    <add type="Our.Umbraco.Vorto.Web.PropertyEditors.VortoPropertyEditor, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.DecimalPropertyEditor, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.GridPropertyEditor, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.EmailAddressPropertyEditor, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
@@ -209,76 +301,9 @@
     <add type="Umbraco.Web.PropertyEditors.TextAreaPropertyEditor, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.TextboxPropertyEditor, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PropertyEditors.TrueFalsePropertyEditor, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.PropertyEditors.ParameterEditor, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.PropertyEditors.PropertyEditor, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Our.Umbraco.Vorto.Web.PropertyEditors.VortoPropertyEditor, Our.Umbraco.Vorto, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.DotNetCheckBoxPicker.DotNetCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.DotNetDropDownPicker.DotNetDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.DotNetLabels.DotNetLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.DotNetPrefetchListPicker.DotNetPrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.DotNetRadioButtonPicker.DotnetRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.DotNetTypeaheadListPicker.DotNetTypeaheadPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.EnumLabels.EnumLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.JsonLabels.JsonLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.JsonTypeaheadListPicker.JsonTypeaheadPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.JsonRadioButtonPicker.JsonRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.JsonPrefetchListPicker.JsonPrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.JsonDropDownPicker.JsonDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.JsonCheckBoxPicker.JsonCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.EnumCheckBoxPicker.EnumCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.EnumDropDownPicker.EnumDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.EnumPrefetchListPicker.EnumPrefetchListPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.EnumRadioButtonPicker.EnumRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.LuceneCheckBoxPicker.LuceneCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.LuceneDropDownPicker.LuceneDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.LuceneLabels.LuceneLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.LucenePrefetchListPicker.LucenePrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.LuceneRadioButtonPicker.LuceneRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.LuceneTypeaheadListPicker.LuceneTypeaheadPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.SqlLabels.SqlLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.SqlTypeaheadListPicker.SqlTypeaheadListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.XmlLabels.XmlLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.XmlTypeaheadListPicker.XmlTypeaheadPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.RelationLabels.RelationLabelsPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.SqlCheckBoxPicker.SqlCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.SqlDropDownPicker.SqlDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.SqlPrefetchListPicker.SqlPrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.SqlRadioButtonPicker.SqlRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.XmlCheckBoxPicker.XmlCheckBoxPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.XmlDropDownPicker.XmlDropDownPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.XmlPrefetchListPicker.XmlPrefetchListPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="nuPickers.PropertyEditors.XmlRadioButtonPicker.XmlRadioButtonPickerPropertyEditor, uComponents.nuPickers, Version=1.5.3.159, Culture=neutral, PublicKeyToken=null" />
-    <add type="Zoombraco.Resources.PropertyEditors.CharDisplayPropertyEditor, Zoombraco, Version=0.5.0.23, Culture=neutral, PublicKeyToken=null" />
-    <add type="Zoombraco.Resources.PropertyEditors.CharLimitPropertyEditor, Zoombraco, Version=0.5.0.23, Culture=neutral, PublicKeyToken=null" />
   </baseType>
-  <baseType type="Umbraco.Core.Persistence.Mappers.BaseMapper" resolutionType="FindTypesWithAttribute">
-    <add type="Umbraco.Core.Persistence.Mappers.AccessMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.DomainMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.MigrationEntryMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.TaskTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.MemberGroupMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.TagMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.TemplateMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.MacroMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.MemberMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.MemberTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.ContentMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.ContentTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.DataTypeDefinitionMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.DictionaryMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.DictionaryTranslationMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.LanguageMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.MediaMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.MediaTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.PropertyGroupMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.PropertyMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.PropertyTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.RelationMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.RelationTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.ServerRegistrationMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.UmbracoEntityMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.ExternalLoginMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.UserMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.Core.Persistence.Mappers.UserTypeMapper, Umbraco.Core, Version=1.0.6079.16190, Culture=neutral, PublicKeyToken=null" />
+  <baseType type="umbraco.cms.businesslogic.macro.IMacroEngine" resolutionType="FindAllTypes">
+    <add type="umbraco.MacroEngines.RazorMacroEngine, umbraco.MacroEngines, Version=1.0.6079.16198, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.Web.Macros.PartialViewMacroEngine, umbraco, Version=1.0.6079.16195, Culture=neutral, PublicKeyToken=null" />
   </baseType>
 </plugins>
