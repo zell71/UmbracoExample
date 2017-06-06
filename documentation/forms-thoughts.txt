@@ -1,0 +1,13 @@
+initial idea is just to use the umbraco forms api
+https://www.nuget.org/packages/UmbracoForms.Core/
+
+- add a form picker to page, the model should just bind to a Guid.
+- using the umbraco forms api, you can load the form and render that in your own form rendering which isn't tightly coupled with the form its rendering (you should be able to re-use the umbraco form rendering to see how they do it).
+- you have your own save/submit buttons which call your own api controllers, serialise the form as json and store in a database (you can re-use the umbraco connection string and create your own table within the umbraco database or create your own).
+- store the form json in the table and generate a guid, guid is stored in a cookie (set an expiry date on the cookie for as long/short as required) with a guid on which form it was generated with for ease of reference.
+- when the user browsers back to the form page, grab the cookie and render the form.
+
+**notes:**
+- completed forms are stored as json, see dbo.UFRecords.RecordData
+- forms can be re-rendered after submission using the <setting key="AllowEditableFormSubmissions" value="false" /> within App_Plugins\UmbracoForms\UmbracoForms.config so when you are re-rendering your form upon return to the form for the user, you want to replicate the way it does this but obviously using your own id
+- umbraco forms doesn't record the form until submission
